@@ -1,0 +1,73 @@
+.settings-page {
+  display: flex;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.settings-content {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  padding: 25px;
+}
+
+.settings-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.settings-card h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.settings-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.settings-card button {
+  background: #d62828;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.settings-card button:hover {
+  background: #a4161a;
+}
+
+.setting-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.setting-option label {
+  font-size: 18px;
+}
+
+.setting-option input {
+  width: auto;
+  transform: scale(1.4);
+}
+
+.logout-card {
+  text-align: center;
+}
+
+.logout-btn {
+  background: #222;
+}
+
+.logout-btn:hover {
+  background: black;
+}

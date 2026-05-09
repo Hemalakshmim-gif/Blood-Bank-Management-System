@@ -1,0 +1,80 @@
+.donor-page {
+  display: flex;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.donor-content {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  padding: 25px;
+}
+
+.donor-form {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.donor-form h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.donor-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.donor-form button {
+  background: #d62828;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.donor-form button:hover {
+  background: #a4161a;
+}
+
+.donor-table-section {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.donor-table-section h2 {
+  margin-bottom: 20px;
+}
+
+.donor-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.donor-table th {
+  background: #d62828;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.donor-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.donor-table tr:hover {
+  background: #f9f9f9;
+}

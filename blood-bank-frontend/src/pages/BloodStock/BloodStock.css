@@ -1,0 +1,47 @@
+.stock-page {
+  display: flex;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.stock-content {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  padding: 25px;
+}
+
+.stock-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.stock-card {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stock-card:hover {
+  transform: translateY(-5px);
+}
+
+.stock-card h2 {
+  color: #d62828;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.stock-card h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.stock-card p {
+  color: gray;
+  font-size: 18px;
+}
