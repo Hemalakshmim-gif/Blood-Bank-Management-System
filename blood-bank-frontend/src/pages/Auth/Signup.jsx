@@ -1,7 +1,6 @@
 import './Auth.css';
 
 import { useState } from 'react';
-
 import { Link } from 'react-router-dom';
 
 import API from '../../services/api';
@@ -14,6 +13,7 @@ function Signup() {
     password: ''
   });
 
+  // Handle Input Change
   const handleChange = (e) => {
 
     setFormData({
@@ -23,9 +23,25 @@ function Signup() {
 
   };
 
-  const handleSignup = () => {
+  // Signup API
+  const handleSignup = async () => {
 
-    alert('Signup Successful');
+    try {
+
+      const res = await API.post(
+        '/auth/signup',
+        formData
+      );
+
+      alert(res.data);
+
+    } catch (err) {
+
+      console.log(err);
+
+      alert('Signup failed');
+
+    }
 
   };
 

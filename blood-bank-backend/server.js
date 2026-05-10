@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.use("/dashboard", require("./routes/dashboard"));
 app.use("/auth", require("./routes/auth"));
 app.use("/donor", require("./routes/donor"));
 app.use("/patient", require("./routes/patient"));

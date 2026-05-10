@@ -2,15 +2,38 @@ import Sidebar from '../../components/Sidebar/Sidebar';
 import Navbar from '../../components/Navbar/Navbar';
 
 import './Dashboard.css';
-
+import { useEffect, useState} from 'react';
+import API from '../../services/api';
 function Dashboard() {
 
-  const stats = {
-    totalDonors: 120,
-    totalPatients: 80,
-    totalUnits: 350,
-    pendingRequests: 12
-  };
+  const fetchStats = async () => {
+
+  try {
+
+    const res = await API.get(
+      '/dashboard/stats'
+    );
+
+    setStats(res.data);
+
+  } catch (err) {
+
+    console.log(err);
+
+  }
+
+};
+
+  useEffect(()=>{
+    fetchStats();
+  },[]);
+
+  const [stats, setStats] = useState ({
+    totalDonors: 0,
+    totalPatients: 0,
+    totalUnits: 0,
+    pendingRequests: 0
+  });
 
   return (
 
